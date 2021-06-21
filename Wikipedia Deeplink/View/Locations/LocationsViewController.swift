@@ -4,19 +4,30 @@
 
 import UIKit
 
-class LocationsViewController: UIViewController {
+class LocationsViewController: UIViewController, UITableViewDelegate {
         
     private(set) var dataSource: LocationsDataSource!
-
-    convenience init(locations: [Location]) {
+    private var didSelect: ((Location) -> Void)!
+    
+    convenience init(
+        locations: [Location],
+        didSelect: @escaping (Location) -> Void
+    ) {
         self.init()
         dataSource = .init(locations)
+        self.didSelect = didSelect
     }
 
     let tableView = UITableView()
     
     override func loadView() {
         view = tableView
+        tableView.dataSource = dataSource
+        tableView.delegate = self
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didSelect(dataSource.locations[indexPath.row])
     }
 }
 
