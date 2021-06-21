@@ -6,6 +6,13 @@ import UIKit
 
 class LocationsViewController: UIViewController {
         
+    private(set) var dataSource: LocationsDataSource!
+
+    convenience init(locations: [Location]) {
+        self.init()
+        dataSource = .init(locations)
+    }
+
     let tableView = UITableView()
     
     override func loadView() {

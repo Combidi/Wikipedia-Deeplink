@@ -16,4 +16,19 @@ class LocationsViewControllerTest: XCTestCase {
         )
     }
         
+    func test_tableViewIsConfiguredCorrectly() {
+        let sut = LocationsViewController()
+        sut.loadViewIfNeeded()
+        XCTAssertTrue(
+            sut.tableView.dataSource === sut.dataSource,
+            "tableView dataSource is not set"
+        )
+    }
+
+    func test_dataSourceIsConfiguredCorrectly() {
+        let locations = [Location(name: "Nijmegen")]
+        let sut = LocationsViewController(locations: locations)
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.dataSource.locations, locations)
+    }
 }

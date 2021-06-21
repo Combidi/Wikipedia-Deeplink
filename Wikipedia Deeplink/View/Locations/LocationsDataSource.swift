@@ -6,7 +6,7 @@ import UIKit
 
 class LocationsDataSource: NSObject, UITableViewDataSource {
     
-    private let locations: [Location]
+    let locations: [Location]
     
     init(_ locations: [Location]) {
         self.locations = locations
