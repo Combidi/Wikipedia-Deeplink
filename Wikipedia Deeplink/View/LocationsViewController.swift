@@ -6,8 +6,10 @@ import UIKit
 
 class LocationsViewController: UIViewController {
         
-    override func viewDidLoad() {
-        view.backgroundColor = .yellow
+    let tableView = UITableView()
+    
+    override func loadView() {
+        view = tableView
     }
 }
 
