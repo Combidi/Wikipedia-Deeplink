@@ -15,6 +15,7 @@
 		A69DA108268090F4001BA455 /* Wikipedia_DeeplinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA107268090F4001BA455 /* Wikipedia_DeeplinkTests.swift */; };
 		A69DA113268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA112268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift */; };
 		A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA1222680957E001BA455 /* LocationsViewController.swift */; };
+		A69DA12926809854001BA455 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA12826809854001BA455 /* ViewControllerRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A69DA112268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_DeeplinkUITests.swift; sourceTree = "<group>"; };
 		A69DA114268090F4001BA455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69DA1222680957E001BA455 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		A69DA12826809854001BA455 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +141,18 @@
 		A69DA1212680956A001BA455 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A69DA12726809846001BA455 /* Preview Helpers */,
 				A69DA1222680957E001BA455 /* LocationsViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A69DA12726809846001BA455 /* Preview Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A69DA12826809854001BA455 /* ViewControllerRepresentable.swift */,
+			);
+			path = "Preview Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */,
+				A69DA12926809854001BA455 /* ViewControllerRepresentable.swift in Sources */,
 				A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */,
 				A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */,
 			);
