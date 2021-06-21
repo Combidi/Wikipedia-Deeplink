@@ -14,6 +14,7 @@
 		A69DA0FD268090F3001BA455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0FB268090F3001BA455 /* LaunchScreen.storyboard */; };
 		A69DA108268090F4001BA455 /* Wikipedia_DeeplinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA107268090F4001BA455 /* Wikipedia_DeeplinkTests.swift */; };
 		A69DA113268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA112268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift */; };
+		A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA1222680957E001BA455 /* LocationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A69DA10E268090F4001BA455 /* Wikipedia DeeplinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wikipedia DeeplinkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA112268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_DeeplinkUITests.swift; sourceTree = "<group>"; };
 		A69DA114268090F4001BA455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A69DA1222680957E001BA455 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		A69DA0EF268090F2001BA455 /* Wikipedia Deeplink */ = {
 			isa = PBXGroup;
 			children = (
+				A69DA1212680956A001BA455 /* View */,
 				A69DA0F0268090F2001BA455 /* AppDelegate.swift */,
 				A69DA0F2268090F2001BA455 /* SceneDelegate.swift */,
 				A69DA0F6268090F3001BA455 /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				A69DA114268090F4001BA455 /* Info.plist */,
 			);
 			path = "Wikipedia DeeplinkUITests";
+			sourceTree = "<group>";
+		};
+		A69DA1212680956A001BA455 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A69DA1222680957E001BA455 /* LocationsViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			files = (
 				A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */,
 				A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */,
+				A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
