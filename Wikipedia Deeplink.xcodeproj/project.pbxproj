@@ -20,6 +20,7 @@
 		A6EE3DAD2680C7FF0046E5FE /* LocationsDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DAC2680C7FF0046E5FE /* LocationsDataSourceTest.swift */; };
 		A6EE3DB22680C84C0046E5FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DB12680C84C0046E5FE /* Location.swift */; };
 		A6EE3DB42680C8760046E5FE /* LocationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DB32680C8760046E5FE /* LocationsDataSource.swift */; };
+		A6EE3DBC268109240046E5FE /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DBB268109240046E5FE /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A6EE3DAC2680C7FF0046E5FE /* LocationsDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataSourceTest.swift; sourceTree = "<group>"; };
 		A6EE3DB12680C84C0046E5FE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A6EE3DB32680C8760046E5FE /* LocationsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataSource.swift; sourceTree = "<group>"; };
+		A6EE3DBB268109240046E5FE /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				A6EE3DB12680C84C0046E5FE /* Location.swift */,
+				A6EE3DBB268109240046E5FE /* DataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EE3DBC268109240046E5FE /* DataStore.swift in Sources */,
 				A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */,
 				A6EE3DB42680C8760046E5FE /* LocationsDataSource.swift in Sources */,
 				A69DA12926809854001BA455 /* ViewControllerRepresentable.swift in Sources */,
