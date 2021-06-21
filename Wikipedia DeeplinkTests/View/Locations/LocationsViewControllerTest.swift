@@ -8,8 +8,7 @@ import XCTest
 class LocationsViewControllerTest: XCTestCase {
     
     func test_viewIsSetCorrectly() {
-        let sut = LocationsViewController()
-        sut.loadViewIfNeeded()
+        let sut = configuredSUT()
         XCTAssertTrue(
             sut.view === sut.tableView,
             ".view is not set"
@@ -17,8 +16,7 @@ class LocationsViewControllerTest: XCTestCase {
     }
         
     func test_tableViewDataSourceIsConfiguredCorrectly() {
-        let sut = LocationsViewController(locations: [], didSelect: {_ in})
-        sut.loadViewIfNeeded()
+        let sut = configuredSUT()
         XCTAssertTrue(
             sut.tableView.dataSource === sut.dataSource,
             "tableView dataSource is not set"
@@ -27,15 +25,12 @@ class LocationsViewControllerTest: XCTestCase {
 
     func test_dataSourceIsConfiguredCorrectly() {
         let locations = [Location(name: "Nijmegen")]
-        let sut = LocationsViewController(locations: locations, didSelect: {_ in})
-        sut.loadViewIfNeeded()
+        let sut = configuredSUT(locations: locations)
         XCTAssertEqual(sut.dataSource.locations, locations)
     }
     
     func test_tableViewDelegateIsSet() {
-        let sut = LocationsViewController(locations: [], didSelect: {_ in})
-        sut.loadViewIfNeeded()
-
+        let sut = configuredSUT()
         XCTAssertTrue(sut.tableView.delegate === sut)
     }
     
@@ -45,11 +40,24 @@ class LocationsViewControllerTest: XCTestCase {
             .init(name: "Velp")
         ]
         var capturedLocation: Location?
-        let sut = LocationsViewController(locations: locations) {
+        let sut = configuredSUT(locations: locations) {
             capturedLocation = $0
         }
-        sut.loadViewIfNeeded()
         sut.tableView(sut.tableView, didSelectRowAt: .init(row: 1, section: 0))
         XCTAssertEqual(capturedLocation, locations[1])
+    }
+    
+    // MARK: Helpers
+    
+    func configuredSUT(
+        locations: [Location] = [],
+        didSelect: @escaping (Location) -> Void = {_ in}
+    ) -> LocationsViewController {
+        let viewController = LocationsViewController(
+            locations: locations,
+            didSelect: didSelect
+        )
+        viewController.loadViewIfNeeded()
+        return viewController
     }
 }
