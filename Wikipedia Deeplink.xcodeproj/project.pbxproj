@@ -21,6 +21,8 @@
 		A6EE3DB22680C84C0046E5FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DB12680C84C0046E5FE /* Location.swift */; };
 		A6EE3DB42680C8760046E5FE /* LocationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DB32680C8760046E5FE /* LocationsDataSource.swift */; };
 		A6EE3DBC268109240046E5FE /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DBB268109240046E5FE /* DataStore.swift */; };
+		A6EE3DC02681098E0046E5FE /* CoordinatesFormViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DBF2681098E0046E5FE /* CoordinatesFormViewControllerTest.swift */; };
+		A6EE3DC2268109BB0046E5FE /* CoordinatesFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DC1268109BB0046E5FE /* CoordinatesFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		A6EE3DB12680C84C0046E5FE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A6EE3DB32680C8760046E5FE /* LocationsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataSource.swift; sourceTree = "<group>"; };
 		A6EE3DBB268109240046E5FE /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		A6EE3DBF2681098E0046E5FE /* CoordinatesFormViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesFormViewControllerTest.swift; sourceTree = "<group>"; };
+		A6EE3DC1268109BB0046E5FE /* CoordinatesFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 		A69DA1212680956A001BA455 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6EE3DBD268109730046E5FE /* Coordinates Form */,
 				A6EE3DAA2680C7E30046E5FE /* Locations */,
 				A69DA12726809846001BA455 /* Preview Helpers */,
 			);
@@ -170,6 +175,7 @@
 		A69DA12F26809B9D001BA455 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6EE3DBE2681097C0046E5FE /* Coordinates Form */,
 				A6EE3DAB2680C7F00046E5FE /* Locations */,
 			);
 			path = View;
@@ -200,6 +206,22 @@
 				A6EE3DBB268109240046E5FE /* DataStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A6EE3DBD268109730046E5FE /* Coordinates Form */ = {
+			isa = PBXGroup;
+			children = (
+				A6EE3DC1268109BB0046E5FE /* CoordinatesFormViewController.swift */,
+			);
+			path = "Coordinates Form";
+			sourceTree = "<group>";
+		};
+		A6EE3DBE2681097C0046E5FE /* Coordinates Form */ = {
+			isa = PBXGroup;
+			children = (
+				A6EE3DBF2681098E0046E5FE /* CoordinatesFormViewControllerTest.swift */,
+			);
+			path = "Coordinates Form";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +358,7 @@
 				A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */,
 				A6EE3DB42680C8760046E5FE /* LocationsDataSource.swift in Sources */,
 				A69DA12926809854001BA455 /* ViewControllerRepresentable.swift in Sources */,
+				A6EE3DC2268109BB0046E5FE /* CoordinatesFormViewController.swift in Sources */,
 				A6EE3DB22680C84C0046E5FE /* Location.swift in Sources */,
 				A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */,
 				A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */,
@@ -346,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EE3DC02681098E0046E5FE /* CoordinatesFormViewControllerTest.swift in Sources */,
 				A69DA108268090F4001BA455 /* Wikipedia_DeeplinkTests.swift in Sources */,
 				A69DA13126809BA5001BA455 /* LocationsViewControllerTest.swift in Sources */,
 				A6EE3DAD2680C7FF0046E5FE /* LocationsDataSourceTest.swift in Sources */,
