@@ -18,7 +18,7 @@ protocol Application {
 
 class Store {
     
-    private let application: Application
+    let application: Application
     private (set) var state: State
     
     init(application: Application, initialState: State) {

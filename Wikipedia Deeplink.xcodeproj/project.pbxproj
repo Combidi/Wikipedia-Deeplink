@@ -29,6 +29,8 @@
 		A681EB0226820ED600FD625D /* ApplicationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB0126820ED600FD625D /* ApplicationSpy.swift */; };
 		A681EB07268216F300FD625D /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB06268216F300FD625D /* Factory.swift */; };
 		A681EB092682170D00FD625D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB082682170D00FD625D /* NavigationController.swift */; };
+		A681EB0B268217B300FD625D /* makeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB0A268217B300FD625D /* makeStore.swift */; };
+		A681EB0D268217EF00FD625D /* makeStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB0C268217EF00FD625D /* makeStoreTest.swift */; };
 		A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F0268090F2001BA455 /* AppDelegate.swift */; };
 		A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F2268090F2001BA455 /* SceneDelegate.swift */; };
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
@@ -87,6 +89,8 @@
 		A681EB0126820ED600FD625D /* ApplicationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSpy.swift; sourceTree = "<group>"; };
 		A681EB06268216F300FD625D /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		A681EB082682170D00FD625D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A681EB0A268217B300FD625D /* makeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeStore.swift; sourceTree = "<group>"; };
+		A681EB0C268217EF00FD625D /* makeStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeStoreTest.swift; sourceTree = "<group>"; };
 		A69DA0ED268090F2001BA455 /* Wikipedia Deeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Deeplink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA0F0268090F2001BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69DA0F2268090F2001BA455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A681EAFD26820CA600FD625D /* StoreTest.swift */,
+				A681EB0C268217EF00FD625D /* makeStoreTest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				A6EE3DB12680C84C0046E5FE /* Location.swift */,
 				A681EAD72681C94D00FD625D /* Coordinate.swift */,
 				A681EAE72681EACA00FD625D /* Store.swift */,
+				A681EB0A268217B300FD625D /* makeStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 				A6EE3DB22680C84C0046E5FE /* Location.swift in Sources */,
 				A681EADC2681C9CB00FD625D /* Router.swift in Sources */,
 				A681EB092682170D00FD625D /* NavigationController.swift in Sources */,
+				A681EB0B268217B300FD625D /* makeStore.swift in Sources */,
 				A681EAE42681E57400FD625D /* ViewControllerFactory.swift in Sources */,
 				A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */,
 				A681EB07268216F300FD625D /* Factory.swift in Sources */,
@@ -489,6 +496,7 @@
 			files = (
 				A681EAFE26820CA600FD625D /* StoreTest.swift in Sources */,
 				A6EE3DC02681098E0046E5FE /* CoordinatesFormViewControllerTest.swift in Sources */,
+				A681EB0D268217EF00FD625D /* makeStoreTest.swift in Sources */,
 				A681EAEA2681F10200FD625D /* RoutableNavigationControllerTest.swift in Sources */,
 				A681EAE62681E57E00FD625D /* ViewControllerFactoryTest.swift in Sources */,
 				A681EAF72681FCBA00FD625D /* WeakRefTest.swift in Sources */,
