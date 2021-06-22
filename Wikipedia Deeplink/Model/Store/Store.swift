@@ -24,6 +24,6 @@ class Store {
     
 }
 
-func wikipediaDeeplinkURL(for coordinate: Coordinate) -> URL {
+fileprivate func wikipediaDeeplinkURL(for coordinate: Coordinate) -> URL {
     URL(string: "wikipedia://places/?WMFCoordinate=\(coordinate.lat),\(coordinate.long)")!
 }
