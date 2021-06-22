@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A681EAD82681C94D00FD625D /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAD72681C94D00FD625D /* Coordinate.swift */; };
 		A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F0268090F2001BA455 /* AppDelegate.swift */; };
 		A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F2268090F2001BA455 /* SceneDelegate.swift */; };
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		A6EE3DBC268109240046E5FE /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DBB268109240046E5FE /* DataStore.swift */; };
 		A6EE3DC02681098E0046E5FE /* CoordinatesFormViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DBF2681098E0046E5FE /* CoordinatesFormViewControllerTest.swift */; };
 		A6EE3DC2268109BB0046E5FE /* CoordinatesFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE3DC1268109BB0046E5FE /* CoordinatesFormViewController.swift */; };
+		A6EE3DC4268110DC0046E5FE /* CoordinatesFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EE3DC3268110DC0046E5FE /* CoordinatesFormViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A681EAD72681C94D00FD625D /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		A69DA0ED268090F2001BA455 /* Wikipedia Deeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Deeplink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA0F0268090F2001BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69DA0F2268090F2001BA455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		A6EE3DBB268109240046E5FE /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		A6EE3DBF2681098E0046E5FE /* CoordinatesFormViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesFormViewControllerTest.swift; sourceTree = "<group>"; };
 		A6EE3DC1268109BB0046E5FE /* CoordinatesFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesFormViewController.swift; sourceTree = "<group>"; };
+		A6EE3DC3268110DC0046E5FE /* CoordinatesFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoordinatesFormViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,7 @@
 			children = (
 				A6EE3DB12680C84C0046E5FE /* Location.swift */,
 				A6EE3DBB268109240046E5FE /* DataStore.swift */,
+				A681EAD72681C94D00FD625D /* Coordinate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				A6EE3DC1268109BB0046E5FE /* CoordinatesFormViewController.swift */,
+				A6EE3DC3268110DC0046E5FE /* CoordinatesFormViewController.xib */,
 			);
 			path = "Coordinates Form";
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EE3DC4268110DC0046E5FE /* CoordinatesFormViewController.xib in Resources */,
 				A69DA0FD268090F3001BA455 /* LaunchScreen.storyboard in Resources */,
 				A69DA0FA268090F3001BA455 /* Preview Assets.xcassets in Resources */,
 				A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */,
@@ -359,6 +366,7 @@
 				A6EE3DB42680C8760046E5FE /* LocationsDataSource.swift in Sources */,
 				A69DA12926809854001BA455 /* ViewControllerRepresentable.swift in Sources */,
 				A6EE3DC2268109BB0046E5FE /* CoordinatesFormViewController.swift in Sources */,
+				A681EAD82681C94D00FD625D /* Coordinate.swift in Sources */,
 				A6EE3DB22680C84C0046E5FE /* Location.swift in Sources */,
 				A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */,
 				A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */,
