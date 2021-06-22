@@ -7,11 +7,18 @@ import XCTest
 
 class RoutableNavigationControllerTest: XCTestCase {
     
-    func test() {
+    func test_startRoutableWhenViewDidLoad() {
         let routable = RoutableSpy()
         let sut = RoutableNavigationController(routable: routable)
         sut.loadViewIfNeeded()
         XCTAssertTrue(routable.startCalled)
+    }
+    
+    func test_retainCycle() {
+        var sut: RoutableNavigationController? = .init(routable: RoutableSpy())
+        weak var weakSUT = sut
+        sut = nil
+        XCTAssertNil(weakSUT)
     }
 }
 

@@ -16,8 +16,7 @@ class RoutableNavigationController: UINavigationController {
     convenience init(routable: Routable) {
         self.init()
         self.routable = routable
-        #warning("This will result in memory leaks!")
-        self.routable.navigationController = self
+        self.routable.navigationController = WeakRef(self)
     }
     
     override func viewDidLoad() {

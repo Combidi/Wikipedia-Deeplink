@@ -86,24 +86,6 @@ fileprivate class FactorySpy: Factory {
 
 }
 
-fileprivate class NavigationControllerSpy: NavigationController {
-    
-    var capturedInitialViewController: UIViewController!
-    func set(initialViewController: UIViewController) {
-        capturedInitialViewController = initialViewController
-    }
-    
-    var capturedViewController_present: UIViewController!
-    func present(viewController: UIViewController) {
-        capturedViewController_present = viewController
-    }
-    
-    var popToRootCalled = false
-    func popToRoot() {
-        popToRootCalled = true
-    }
-}
-
 fileprivate class StoreSpy: Store {
     
     var capturedActions: [Action] = []
