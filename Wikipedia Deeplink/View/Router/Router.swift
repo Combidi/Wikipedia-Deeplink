@@ -14,10 +14,7 @@ class Router {
     private let store: Store
     private let factory: Factory
     
-    init(
-        store: Store,
-        factory: Factory
-    ) {
+    init(store: Store, factory: Factory) {
         self.store = store
         self.factory = factory
     }
@@ -44,8 +41,6 @@ class Router {
             locations: store.state.locations,
             didSelect: { [unowned self] in
                 store.dispatch(action: .openWikipedia($0.coordinate))
-                let testController = UIViewController()
-                testController.view.backgroundColor = .red
             }
         )
     }
