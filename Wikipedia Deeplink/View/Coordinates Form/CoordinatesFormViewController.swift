@@ -6,7 +6,7 @@ import UIKit
 
 class CoordinatesFormViewController: UIViewController {
     
-    private var commit: ((Coordinate) -> Void)!
+    private(set) var commit: ((Coordinate) -> Void)!
     
     convenience init(commit: @escaping (Coordinate) -> Void) {
         self.init()

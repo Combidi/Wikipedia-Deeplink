@@ -28,19 +28,23 @@ class RouterTest: XCTestCase {
         sut.currentDestination = .locationSelection
         XCTAssertTrue(navigationController.popToRootCalled)
     }
+    
 }
 
 fileprivate class FactorySpy: Factory {
             
     let locationSelectionViewControllerStub = UIViewController()
-    
-    func makeLocationSelectionViewController() -> UIViewController {
+    func makeLocationSelectionViewController(
+        locations: [Location],
+        didSelect: @escaping (Location) -> Void
+    ) -> UIViewController {
         return locationSelectionViewControllerStub
     }
 
     let coordinateFormViewControllerStub = UIViewController()
-    
-    func makeCoordinationFormViewController() -> UIViewController {
+    func makeCoordinationFormViewController(
+        didCommit: @escaping (Coordinate) -> Void
+    ) -> UIViewController {
         return coordinateFormViewControllerStub
     }
 

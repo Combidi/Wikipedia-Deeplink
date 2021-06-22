@@ -6,8 +6,14 @@ import UIKit
 
 protocol Factory {
 
-    func makeLocationSelectionViewController() -> UIViewController
-    func makeCoordinationFormViewController() -> UIViewController
+    func makeLocationSelectionViewController(
+        locations: [Location],
+        didSelect: @escaping (Location) -> Void
+    ) -> UIViewController
+    
+    func makeCoordinationFormViewController(
+        didCommit: @escaping (Coordinate) -> Void
+    ) -> UIViewController
 
 }
 
@@ -40,14 +46,17 @@ class Router {
             case .locationSelection:
                 navigationController.popToRoot()
             case .coordinateForm:
-                let viewController = factory.makeCoordinationFormViewController()
+                let viewController = factory.makeCoordinationFormViewController(didCommit: {_ in})
                 navigationController.present(viewController: viewController)
             }
         }
     }
     
     func start() {
-        let viewController = factory.makeLocationSelectionViewController()
+        let viewController = factory.makeLocationSelectionViewController(
+            locations: [],
+            didSelect: {_ in}
+        )
         navigationController.set(initialViewController: viewController)
     }
 }

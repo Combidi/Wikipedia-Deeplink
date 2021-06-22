@@ -7,7 +7,7 @@ import UIKit
 class LocationsViewController: UIViewController, UITableViewDelegate {
         
     private(set) var dataSource: LocationsDataSource!
-    private var didSelect: ((Location) -> Void)!
+    private(set) var didSelect: ((Location) -> Void)!
     
     convenience init(
         locations: [Location],
