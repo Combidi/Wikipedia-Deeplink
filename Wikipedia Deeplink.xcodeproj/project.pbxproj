@@ -34,6 +34,7 @@
 		A681EB102682198300FD625D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB0F2682198300FD625D /* Action.swift */; };
 		A681EB122682199900FD625D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB112682199900FD625D /* State.swift */; };
 		A681EB14268219AB00FD625D /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB13268219AB00FD625D /* Application.swift */; };
+		A681EB1726821B2000FD625D /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB1626821B2000FD625D /* Routable.swift */; };
 		A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F0268090F2001BA455 /* AppDelegate.swift */; };
 		A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F2268090F2001BA455 /* SceneDelegate.swift */; };
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		A681EB0F2682198300FD625D /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		A681EB112682199900FD625D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		A681EB13268219AB00FD625D /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		A681EB1626821B2000FD625D /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		A69DA0ED268090F2001BA455 /* Wikipedia Deeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Deeplink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA0F0268090F2001BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69DA0F2268090F2001BA455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +202,16 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		A681EB1526821B0100FD625D /* Routable Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A681EAEB2681F16400FD625D /* RoutableNavigationController.swift */,
+				A681EAEF2681FB7200FD625D /* WeakRef+NavigationController.swift */,
+				A681EB1626821B2000FD625D /* Routable.swift */,
+			);
+			path = "Routable Navigation Controller";
+			sourceTree = "<group>";
+		};
 		A69DA0E4268090F2001BA455 = {
 			isa = PBXGroup;
 			children = (
@@ -268,14 +280,13 @@
 		A69DA1212680956A001BA455 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A681EB1526821B0100FD625D /* Routable Navigation Controller */,
 				A681EB05268216E300FD625D /* Router */,
 				A681EADD2681DFF400FD625D /* UIKit Extensions */,
 				A6EE3DBD268109730046E5FE /* Coordinates Form */,
 				A6EE3DAA2680C7E30046E5FE /* Locations */,
 				A69DA12726809846001BA455 /* Preview Helpers */,
 				A681EAE32681E57400FD625D /* ViewControllerFactory.swift */,
-				A681EAEB2681F16400FD625D /* RoutableNavigationController.swift */,
-				A681EAEF2681FB7200FD625D /* WeakRef+NavigationController.swift */,
 				A681EAFA2682055F00FD625D /* BarButtonItem.swift */,
 			);
 			path = View;
@@ -488,6 +499,7 @@
 				A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */,
 				A681EB102682198300FD625D /* Action.swift in Sources */,
 				A6EE3DB42680C8760046E5FE /* LocationsDataSource.swift in Sources */,
+				A681EB1726821B2000FD625D /* Routable.swift in Sources */,
 				A69DA12926809854001BA455 /* ViewControllerRepresentable.swift in Sources */,
 				A6EE3DC2268109BB0046E5FE /* CoordinatesFormViewController.swift in Sources */,
 				A681EAD82681C94D00FD625D /* Coordinate.swift in Sources */,

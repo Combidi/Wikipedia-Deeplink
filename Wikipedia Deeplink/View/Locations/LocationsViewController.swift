@@ -29,6 +29,7 @@ class LocationsViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         didSelect(dataSource.locations[indexPath.row])
     }
+    
 }
 
 #if DEBUG

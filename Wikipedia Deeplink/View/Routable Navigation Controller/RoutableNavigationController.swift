@@ -4,11 +4,6 @@
 
 import UIKit
 
-protocol Routable {
-    func start()
-    var navigationController: NavigationController? { get set }
-}
-
 class RoutableNavigationController: UINavigationController {
  
     private var routable: Routable!

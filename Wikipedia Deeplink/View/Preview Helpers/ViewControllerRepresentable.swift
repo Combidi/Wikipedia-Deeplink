@@ -5,7 +5,7 @@
 #if DEBUG
 import SwiftUI
 
-struct ViewControllerRepresentable<ViewController : UIViewController>: UIViewControllerRepresentable {
+struct ViewControllerRepresentable<ViewController: UIViewController>: UIViewControllerRepresentable {
     
     typealias Updater = (ViewController, Context) -> Void
 

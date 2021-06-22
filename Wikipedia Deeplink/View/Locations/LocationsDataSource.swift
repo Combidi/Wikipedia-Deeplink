@@ -16,9 +16,13 @@ class LocationsDataSource: NSObject, UITableViewDataSource {
         locations.count
     }
         
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath
+    ) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = locations[indexPath.row].name
         return cell
     }
+    
 }
