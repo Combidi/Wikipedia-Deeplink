@@ -39,7 +39,6 @@
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
 		A69DA0FA268090F3001BA455 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F9268090F3001BA455 /* Preview Assets.xcassets */; };
 		A69DA0FD268090F3001BA455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0FB268090F3001BA455 /* LaunchScreen.storyboard */; };
-		A69DA108268090F4001BA455 /* Wikipedia_DeeplinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA107268090F4001BA455 /* Wikipedia_DeeplinkTests.swift */; };
 		A69DA113268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA112268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift */; };
 		A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA1222680957E001BA455 /* LocationsViewController.swift */; };
 		A69DA12926809854001BA455 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA12826809854001BA455 /* ViewControllerRepresentable.swift */; };
@@ -105,7 +104,6 @@
 		A69DA0FC268090F3001BA455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A69DA0FE268090F3001BA455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69DA103268090F4001BA455 /* Wikipedia DeeplinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wikipedia DeeplinkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A69DA107268090F4001BA455 /* Wikipedia_DeeplinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_DeeplinkTests.swift; sourceTree = "<group>"; };
 		A69DA109268090F4001BA455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69DA10E268090F4001BA455 /* Wikipedia DeeplinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wikipedia DeeplinkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA112268090F4001BA455 /* Wikipedia_DeeplinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_DeeplinkUITests.swift; sourceTree = "<group>"; };
@@ -252,7 +250,6 @@
 				A681EAF62681FCBA00FD625D /* WeakRefTest.swift */,
 				A681EAFC26820C9F00FD625D /* Model */,
 				A69DA12F26809B9D001BA455 /* View */,
-				A69DA107268090F4001BA455 /* Wikipedia_DeeplinkTests.swift */,
 				A69DA109268090F4001BA455 /* Info.plist */,
 				A681EAF82682050E00FD625D /* BarButtonItemTest.swift */,
 			);
@@ -520,7 +517,6 @@
 				A681EAEA2681F10200FD625D /* RoutableNavigationControllerTest.swift in Sources */,
 				A681EAE62681E57E00FD625D /* ViewControllerFactoryTest.swift in Sources */,
 				A681EAF72681FCBA00FD625D /* WeakRefTest.swift in Sources */,
-				A69DA108268090F4001BA455 /* Wikipedia_DeeplinkTests.swift in Sources */,
 				A681EADA2681C9A100FD625D /* RouterTest.swift in Sources */,
 				A681EAF22681FB9600FD625D /* WeakRef+NavigationControllerTest.swift in Sources */,
 				A681EAF52681FC5E00FD625D /* NavigationControllerSpy.swift in Sources */,
