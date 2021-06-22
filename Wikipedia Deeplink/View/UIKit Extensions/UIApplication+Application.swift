@@ -6,8 +6,9 @@ import UIKit
 
 extension UIApplication: Application {
     
+    #warning("Not covered with unit tests")
     func open(url: URL) {
-        fatalError()
+        open(url)
     }
 
 }
