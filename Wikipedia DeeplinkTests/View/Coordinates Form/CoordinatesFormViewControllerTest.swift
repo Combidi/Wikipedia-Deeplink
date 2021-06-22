@@ -26,7 +26,6 @@ class CoordinatesFormViewControllerTest: XCTestCase {
     }
 
     func test_commitAction() {
-        
         let lat: Double = 51.979605
         let long: Double = 5.911081
         var capturedCoordinate: Coordinate?

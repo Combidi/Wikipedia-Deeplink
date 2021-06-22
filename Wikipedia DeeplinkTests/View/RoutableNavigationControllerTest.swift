@@ -20,6 +20,7 @@ class RoutableNavigationControllerTest: XCTestCase {
         sut = nil
         XCTAssertNil(weakSUT)
     }
+    
 }
 
 fileprivate class RoutableSpy: Routable {

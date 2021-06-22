@@ -39,4 +39,5 @@ class ViewControllerFactoryTest: XCTestCase {
         result.commit(expectedCoordinate)
         XCTAssertEqual(capturedCoordinate, expectedCoordinate)
     }
+    
 }
