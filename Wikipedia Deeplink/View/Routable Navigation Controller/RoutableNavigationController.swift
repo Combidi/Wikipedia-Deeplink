@@ -11,7 +11,7 @@ class RoutableNavigationController: UINavigationController {
     convenience init(routable: Routable) {
         self.init()
         self.routable = routable
-        self.routable.navigationController = WeakRef(self)
+        self.routable.navigationController = WeakRef(self) // Using WeakRef to prevent a retain cycle
     }
     
     override func viewDidLoad() {
