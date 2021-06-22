@@ -33,6 +33,16 @@ class CoordinatesFormViewController: UIViewController {
         }
         commit(.init(lat: latitude, long: longitude))
     }
+    
+    override func viewDidLoad() {
+        configureSubviews()
+    }
+    
+    private func configureSubviews() {
+        latitudeField.placeholder = "Latitude"
+        longitudeField.placeholder = "Longitude"
+        commitButton.setTitle("Commit", for: .normal)
+    }
         
 }
 
