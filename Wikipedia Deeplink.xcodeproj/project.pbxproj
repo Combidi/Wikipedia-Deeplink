@@ -31,6 +31,9 @@
 		A681EB092682170D00FD625D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB082682170D00FD625D /* NavigationController.swift */; };
 		A681EB0B268217B300FD625D /* makeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB0A268217B300FD625D /* makeStore.swift */; };
 		A681EB0D268217EF00FD625D /* makeStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB0C268217EF00FD625D /* makeStoreTest.swift */; };
+		A681EB102682198300FD625D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB0F2682198300FD625D /* Action.swift */; };
+		A681EB122682199900FD625D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB112682199900FD625D /* State.swift */; };
+		A681EB14268219AB00FD625D /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EB13268219AB00FD625D /* Application.swift */; };
 		A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F0268090F2001BA455 /* AppDelegate.swift */; };
 		A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F2268090F2001BA455 /* SceneDelegate.swift */; };
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
@@ -91,6 +94,9 @@
 		A681EB082682170D00FD625D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A681EB0A268217B300FD625D /* makeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeStore.swift; sourceTree = "<group>"; };
 		A681EB0C268217EF00FD625D /* makeStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeStoreTest.swift; sourceTree = "<group>"; };
+		A681EB0F2682198300FD625D /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		A681EB112682199900FD625D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		A681EB13268219AB00FD625D /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		A69DA0ED268090F2001BA455 /* Wikipedia Deeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Deeplink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA0F0268090F2001BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69DA0F2268090F2001BA455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +189,17 @@
 				A681EB082682170D00FD625D /* NavigationController.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		A681EB0E2682197700FD625D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A681EAE72681EACA00FD625D /* Store.swift */,
+				A681EB0F2682198300FD625D /* Action.swift */,
+				A681EB112682199900FD625D /* State.swift */,
+				A681EB13268219AB00FD625D /* Application.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		A69DA0E4268090F2001BA455 = {
@@ -311,9 +328,9 @@
 		A6EE3DB02680C8450046E5FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A681EB0E2682197700FD625D /* Store */,
 				A6EE3DB12680C84C0046E5FE /* Location.swift */,
 				A681EAD72681C94D00FD625D /* Coordinate.swift */,
-				A681EAE72681EACA00FD625D /* Store.swift */,
 				A681EB0A268217B300FD625D /* makeStore.swift */,
 			);
 			path = Model;
@@ -470,7 +487,9 @@
 				A681EAF02681FB7200FD625D /* WeakRef+NavigationController.swift in Sources */,
 				A681EAEC2681F16400FD625D /* RoutableNavigationController.swift in Sources */,
 				A681EADF2681E00400FD625D /* UINavigationController+NavigationController.swift in Sources */,
+				A681EB122682199900FD625D /* State.swift in Sources */,
 				A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */,
+				A681EB102682198300FD625D /* Action.swift in Sources */,
 				A6EE3DB42680C8760046E5FE /* LocationsDataSource.swift in Sources */,
 				A69DA12926809854001BA455 /* ViewControllerRepresentable.swift in Sources */,
 				A6EE3DC2268109BB0046E5FE /* CoordinatesFormViewController.swift in Sources */,
@@ -478,6 +497,7 @@
 				A681EAEE2681FB3E00FD625D /* WeakRef.swift in Sources */,
 				A681EAE82681EACA00FD625D /* Store.swift in Sources */,
 				A6EE3DB22680C84C0046E5FE /* Location.swift in Sources */,
+				A681EB14268219AB00FD625D /* Application.swift in Sources */,
 				A681EADC2681C9CB00FD625D /* Router.swift in Sources */,
 				A681EB092682170D00FD625D /* NavigationController.swift in Sources */,
 				A681EB0B268217B300FD625D /* makeStore.swift in Sources */,

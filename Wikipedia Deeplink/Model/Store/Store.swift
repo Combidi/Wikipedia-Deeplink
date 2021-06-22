@@ -2,19 +2,7 @@
 //  Created by Peter Combee on 22/06/2021.
 //
 
-enum Action: Equatable {
-    case openWikipedia(Coordinate)
-}
-
-struct State {
-    let locations: [Location]
-}
-
 import Foundation
-
-protocol Application {
-    func open(url: URL)
-}
 
 class Store {
     
