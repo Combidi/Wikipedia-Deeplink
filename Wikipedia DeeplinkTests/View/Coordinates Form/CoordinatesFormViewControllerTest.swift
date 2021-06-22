@@ -13,7 +13,7 @@ class CoordinatesFormViewControllerTest: XCTestCase {
         XCTAssertNotNil(sut.latitudeField)
     }
 
-    func test_longtitudeFieldIsConnected() {
+    func test_longitudeFieldIsConnected() {
         let sut = CoordinatesFormViewController()
         sut.loadViewIfNeeded()
         XCTAssertNotNil(sut.longitudeField)
@@ -26,19 +26,19 @@ class CoordinatesFormViewControllerTest: XCTestCase {
     }
 
     func test_commitAction() {
-        let lat: Double = 51.979605
-        let long: Double = 5.911081
+        let latitude: Double = 51.979605
+        let longitude: Double = 5.911081
         var capturedCoordinate: Coordinate?
         let sut = CoordinatesFormViewController {
             capturedCoordinate = $0
         }
         sut.loadViewIfNeeded()
-        sut.latitudeField.text = String(lat)
-        sut.longitudeField.text = String(long)
+        sut.latitudeField.text = String(latitude)
+        sut.longitudeField.text = String(longitude)
         sut.commitButtonAction()
         let expected = Coordinate(
-            lat: lat,
-            long: long
+            lat: latitude,
+            long: longitude
         )
         XCTAssertEqual(capturedCoordinate, expected)
     }

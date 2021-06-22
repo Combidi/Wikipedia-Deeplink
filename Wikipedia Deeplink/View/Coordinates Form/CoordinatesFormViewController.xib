@@ -12,7 +12,7 @@
             <connections>
                 <outlet property="commitButton" destination="TPf-nn-1cw" id="8AG-mh-ywr"/>
                 <outlet property="latitudeField" destination="b1L-kz-1dU" id="BDe-lg-XPC"/>
-                <outlet property="longitudeField" destination="vlO-4A-fnw" id="yBO-mv-m4N"/>
+                <outlet property="longitudeField" destination="vlO-4A-fnw" id="6CP-HY-SZe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="PvF-PY-iXS"/>
             </connections>
         </placeholder>

@@ -20,7 +20,7 @@ class CoordinatesFormViewController: UIViewController {
     @IBAction func commitButtonAction() -> Void {
         guard
             let latitude = Double(latitudeField.text!),
-            let longtitude = Double(longitudeField.text!)
+            let longitude = Double(longitudeField.text!)
         else {
             let alert = UIAlertController(
                 title: "Troep!",
@@ -31,9 +31,9 @@ class CoordinatesFormViewController: UIViewController {
             present(alert, animated: true)
             return
         }
-        commit(.init(lat: latitude, long: longtitude))
+        commit(.init(lat: latitude, long: longitude))
     }
-    
+        
 }
 
 #if DEBUG
