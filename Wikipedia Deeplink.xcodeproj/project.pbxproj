@@ -11,6 +11,7 @@
 		A681EADA2681C9A100FD625D /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAD92681C9A100FD625D /* RouterTest.swift */; };
 		A681EADC2681C9CB00FD625D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EADB2681C9CB00FD625D /* Router.swift */; };
 		A681EADF2681E00400FD625D /* UINavigationController+NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EADE2681E00400FD625D /* UINavigationController+NavigationController.swift */; };
+		A681EAE22681E10600FD625D /* UINavigationController+NavigationControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAE12681E10600FD625D /* UINavigationController+NavigationControllerTest.swift */; };
 		A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F0268090F2001BA455 /* AppDelegate.swift */; };
 		A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F2268090F2001BA455 /* SceneDelegate.swift */; };
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		A681EAD92681C9A100FD625D /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 		A681EADB2681C9CB00FD625D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A681EADE2681E00400FD625D /* UINavigationController+NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+NavigationController.swift"; sourceTree = "<group>"; };
+		A681EAE12681E10600FD625D /* UINavigationController+NavigationControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+NavigationControllerTest.swift"; sourceTree = "<group>"; };
 		A69DA0ED268090F2001BA455 /* Wikipedia Deeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Deeplink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA0F0268090F2001BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69DA0F2268090F2001BA455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			isa = PBXGroup;
 			children = (
 				A681EADE2681E00400FD625D /* UINavigationController+NavigationController.swift */,
+			);
+			path = "UIKit Extensions";
+			sourceTree = "<group>";
+		};
+		A681EAE02681E0FB00FD625D /* UIKit Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A681EAE12681E10600FD625D /* UINavigationController+NavigationControllerTest.swift */,
 			);
 			path = "UIKit Extensions";
 			sourceTree = "<group>";
@@ -195,6 +205,7 @@
 		A69DA12F26809B9D001BA455 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A681EAE02681E0FB00FD625D /* UIKit Extensions */,
 				A6EE3DBE2681097C0046E5FE /* Coordinates Form */,
 				A6EE3DAB2680C7F00046E5FE /* Locations */,
 				A681EAD92681C9A100FD625D /* RouterTest.swift */,
@@ -399,6 +410,7 @@
 				A6EE3DC02681098E0046E5FE /* CoordinatesFormViewControllerTest.swift in Sources */,
 				A69DA108268090F4001BA455 /* Wikipedia_DeeplinkTests.swift in Sources */,
 				A681EADA2681C9A100FD625D /* RouterTest.swift in Sources */,
+				A681EAE22681E10600FD625D /* UINavigationController+NavigationControllerTest.swift in Sources */,
 				A69DA13126809BA5001BA455 /* LocationsViewControllerTest.swift in Sources */,
 				A6EE3DAD2680C7FF0046E5FE /* LocationsDataSourceTest.swift in Sources */,
 			);

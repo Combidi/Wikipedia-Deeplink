@@ -20,7 +20,7 @@ class RouterTest: XCTestCase {
     func test_routing() {
         let factory = FactorySpy()
         let navigationController = NavigationControllerSpy()
-        var sut = Router(factory: factory, navigationController: navigationController)
+        let sut = Router(factory: factory, navigationController: navigationController)
         sut.start()
         sut.currentDestination = .coordinateForm
         XCTAssertNotNil(navigationController.capturedViewController_present)

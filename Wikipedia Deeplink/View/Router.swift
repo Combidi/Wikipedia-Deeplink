@@ -19,7 +19,7 @@ protocol NavigationController {
 
 }
 
-struct Router {
+class Router {
         
     enum Destination {
         case locationSelection

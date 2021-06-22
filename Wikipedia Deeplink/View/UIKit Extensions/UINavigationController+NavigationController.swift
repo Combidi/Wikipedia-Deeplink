@@ -7,15 +7,15 @@ import UIKit
 extension UINavigationController: NavigationController {
     
     func set(initialViewController: UIViewController) {
-        fatalError()
+        viewControllers = [initialViewController]
     }
     
     func present(viewController: UIViewController) {
-        fatalError()
+        present(viewController, animated: true)
     }
     
     func popToRoot() {
-        fatalError()
+        popToRootViewController(animated: true)
     }
 
 }
