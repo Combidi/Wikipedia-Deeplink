@@ -22,6 +22,8 @@
 		A681EAF22681FB9600FD625D /* WeakRef+NavigationControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAF12681FB9600FD625D /* WeakRef+NavigationControllerTest.swift */; };
 		A681EAF52681FC5E00FD625D /* NavigationControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAF42681FC5E00FD625D /* NavigationControllerSpy.swift */; };
 		A681EAF72681FCBA00FD625D /* WeakRefTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAF62681FCBA00FD625D /* WeakRefTest.swift */; };
+		A681EAF92682050E00FD625D /* BarButtonItemTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAF82682050E00FD625D /* BarButtonItemTest.swift */; };
+		A681EAFB2682055F00FD625D /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAFA2682055F00FD625D /* BarButtonItem.swift */; };
 		A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F0268090F2001BA455 /* AppDelegate.swift */; };
 		A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F2268090F2001BA455 /* SceneDelegate.swift */; };
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
@@ -73,6 +75,8 @@
 		A681EAF12681FB9600FD625D /* WeakRef+NavigationControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeakRef+NavigationControllerTest.swift"; sourceTree = "<group>"; };
 		A681EAF42681FC5E00FD625D /* NavigationControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerSpy.swift; sourceTree = "<group>"; };
 		A681EAF62681FCBA00FD625D /* WeakRefTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefTest.swift; sourceTree = "<group>"; };
+		A681EAF82682050E00FD625D /* BarButtonItemTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItemTest.swift; sourceTree = "<group>"; };
+		A681EAFA2682055F00FD625D /* BarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
 		A69DA0ED268090F2001BA455 /* Wikipedia Deeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Deeplink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA0F0268090F2001BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69DA0F2268090F2001BA455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 				A69DA12F26809B9D001BA455 /* View */,
 				A69DA107268090F4001BA455 /* Wikipedia_DeeplinkTests.swift */,
 				A69DA109268090F4001BA455 /* Info.plist */,
+				A681EAF82682050E00FD625D /* BarButtonItemTest.swift */,
 			);
 			path = "Wikipedia DeeplinkTests";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				A681EAE32681E57400FD625D /* ViewControllerFactory.swift */,
 				A681EAEB2681F16400FD625D /* RoutableNavigationController.swift */,
 				A681EAEF2681FB7200FD625D /* WeakRef+NavigationController.swift */,
+				A681EAFA2682055F00FD625D /* BarButtonItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 				A681EADC2681C9CB00FD625D /* Router.swift in Sources */,
 				A681EAE42681E57400FD625D /* ViewControllerFactory.swift in Sources */,
 				A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */,
+				A681EAFB2682055F00FD625D /* BarButtonItem.swift in Sources */,
 				A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +463,7 @@
 				A681EAF52681FC5E00FD625D /* NavigationControllerSpy.swift in Sources */,
 				A681EAE22681E10600FD625D /* UINavigationController+NavigationControllerTest.swift in Sources */,
 				A69DA13126809BA5001BA455 /* LocationsViewControllerTest.swift in Sources */,
+				A681EAF92682050E00FD625D /* BarButtonItemTest.swift in Sources */,
 				A6EE3DAD2680C7FF0046E5FE /* LocationsDataSourceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
