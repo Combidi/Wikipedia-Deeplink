@@ -10,8 +10,8 @@ class ViewControllerFactoryTest: XCTestCase {
     func test_makeLocationSelectionViewController() {
         let sut = ViewControllerFactory()
         let expectedLocations: [Location] = [
-            .init(name: "Arnhem"),
-            .init(name: "Velp")
+            .init(name: "Arnhem", coordinate: .init(lat: 51.979605, long: 5.911081)),
+            .init(name: "Velp", coordinate: .init(lat: 51.9939061, long: 5.9735643))
         ]
         var capturedLocation: Location?
         guard let result = sut.makeLocationSelectionViewController(

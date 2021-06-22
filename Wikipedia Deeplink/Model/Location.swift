@@ -4,4 +4,5 @@
 
 struct Location: Equatable {
     let name: String
+    let coordinate: Coordinate
 }

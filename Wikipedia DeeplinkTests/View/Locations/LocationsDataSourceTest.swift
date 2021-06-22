@@ -9,8 +9,8 @@ class LocationsDataSourceTest: XCTestCase {
     
     private var sut: LocationsDataSource!
     private let locations: [Location] = [
-        .init(name: "Arnhem"),
-        .init(name: "Velp")
+        .init(name: "Arnhem", coordinate: .init(lat: 51.979605, long: 5.911081)),
+        .init(name: "Velp", coordinate: .init(lat: 51.9939061, long: 5.9735643))
     ]
     
     override func setUp() {

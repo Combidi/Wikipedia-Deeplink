@@ -32,10 +32,12 @@ class Router {
         case coordinateForm
     }
     
-    private let factory: Factory!
+    private let store: Store
+    private let factory: Factory
     private let navigationController: NavigationController
     
-    init(factory: Factory, navigationController: NavigationController) {
+    init(store: Store, factory: Factory, navigationController: NavigationController) {
+        self.store = store
         self.factory = factory
         self.navigationController = navigationController
     }
@@ -46,7 +48,9 @@ class Router {
             case .locationSelection:
                 navigationController.popToRoot()
             case .coordinateForm:
-                let viewController = factory.makeCoordinationFormViewController(didCommit: {_ in})
+                let viewController = factory.makeCoordinationFormViewController(
+                    didCommit: { [unowned self] in store.dispatch(action: .openWikipedia($0)) }
+                )
                 navigationController.present(viewController: viewController)
             }
         }
@@ -54,8 +58,8 @@ class Router {
     
     func start() {
         let viewController = factory.makeLocationSelectionViewController(
-            locations: [],
-            didSelect: {_ in}
+            locations: store.state.locations,
+            didSelect: { [unowned self] in store.dispatch(action: .openWikipedia($0.coordinate)) }
         )
         navigationController.set(initialViewController: viewController)
     }
