@@ -18,7 +18,7 @@ class LocationsViewController: UIViewController, UITableViewDelegate {
         self.didSelect = didSelect
     }
 
-    let tableView = UITableView()
+    let tableView = UITableView(frame: .init(), style: .insetGrouped)
     
     override func loadView() {
         view = tableView
@@ -37,7 +37,13 @@ import SwiftUI
 
 struct LocationsViewController_Previews: PreviewProvider {
     static var previews: some View {
-        ViewControllerRepresentable(LocationsViewController())
+        ViewControllerRepresentable(LocationsViewController(
+            locations: [
+                .init(name: "Arnhem", coordinate: .init(lat: 51.979605, long: 5.911081)),
+                .init(name: "Velp", coordinate: .init(lat: 51.9939061, long: 5.9735643))
+            ],
+            didSelect: {_ in}
+        ))
     }
 }
 #endif

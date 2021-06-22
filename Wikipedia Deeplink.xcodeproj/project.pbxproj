@@ -336,10 +336,10 @@
 		A6EE3DB02680C8450046E5FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A681EB0A268217B300FD625D /* makeStore.swift */,
 				A681EB0E2682197700FD625D /* Store */,
 				A6EE3DB12680C84C0046E5FE /* Location.swift */,
 				A681EAD72681C94D00FD625D /* Coordinate.swift */,
-				A681EB0A268217B300FD625D /* makeStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
