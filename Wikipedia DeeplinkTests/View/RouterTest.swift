@@ -21,7 +21,7 @@ class RouterTest: XCTestCase {
     override func setUp() {
         factory = .init()
         navigationController = .init()
-        store = .init(initialState: state)
+        store = .init(application: ApplicationSpy(), initialState: state)
         sut = .init(store: store, factory: factory)
         sut.navigationController = navigationController
     }

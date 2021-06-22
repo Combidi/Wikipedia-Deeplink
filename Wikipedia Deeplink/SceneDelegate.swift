@@ -12,10 +12,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = RoutableNavigationController(routable: Router(
-                store: .init(initialState: .init(locations: [
-                    .init(name: "Arnhem", coordinate: .init(lat: 51.979605, long: 5.911081)),
-                    .init(name: "Velp", coordinate: .init(lat: 51.9939061, long: 5.9735643))
-                ])),
+                store: .init(
+                    application: UIApplication.shared,
+                    initialState: .init(locations: [
+                        .init(name: "Arnhem", coordinate: .init(lat: 51.979605, long: 5.911081)),
+                        .init(name: "Velp", coordinate: .init(lat: 51.9939061, long: 5.9735643))
+                    ])
+                ),
                 factory: ViewControllerFactory()
             ))
             self.window = window
