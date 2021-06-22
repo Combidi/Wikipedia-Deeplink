@@ -15,7 +15,7 @@ class BarButtonItem: UIBarButtonItem {
         self.action = #selector(performAction)
     }
     
-    public override init() {
+    override init() {
         super.init()
         self.target = self
         self.action = #selector(performAction)
@@ -25,15 +25,15 @@ class BarButtonItem: UIBarButtonItem {
         fatalError()
     }
    
-    public required init(barButtonSystemItem: UIBarButtonItem.SystemItem) {
+    required init(barButtonSystemItem: UIBarButtonItem.SystemItem) {
         fatalError()
     }
    
-    public required init(title: String) {
+    required init(title: String) {
         fatalError()
     }
    
-    public required init(image: UIImage) {
+    required init(image: UIImage) {
         fatalError()
     }
     
