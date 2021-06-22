@@ -57,8 +57,8 @@ class RouterTest: XCTestCase {
         factory.capturedSelectionClosure(expectedLocation)
         XCTAssertEqual(store.capturedActions.count, 1)
         XCTAssertEqual(store.capturedActions[0], .openWikipedia(expectedLocation.coordinate))
-
     }
+    
 }
 
 fileprivate class FactorySpy: Factory {

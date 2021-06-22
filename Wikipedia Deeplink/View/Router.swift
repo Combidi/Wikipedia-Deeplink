@@ -51,16 +51,17 @@ class Router {
             case .locationSelection:
                 navigationController?.popToRoot()
             case .coordinateForm:
-                let viewController = factory.makeCoordinationFormViewController(
-                    didCommit: { [unowned self] in store.dispatch(action: .openWikipedia($0)) }
-                )
-                navigationController?.present(viewController: viewController)
+                navigationController?.present(viewController: coordinationFormViewController)
             }
         }
     }
     
     func start() {
-        let viewController = factory.makeLocationSelectionViewController(
+        navigationController?.set(initialViewController: locationSelectionViewController)
+    }
+    
+    private var locationSelectionViewController: UIViewController {
+        factory.makeLocationSelectionViewController(
             locations: store.state.locations,
             didSelect: { [unowned self] in
                 store.dispatch(action: .openWikipedia($0.coordinate))
@@ -68,8 +69,14 @@ class Router {
                 testController.view.backgroundColor = .red
             }
         )
-        navigationController?.set(initialViewController: viewController)
     }
+    
+    private var coordinationFormViewController: UIViewController {
+        factory.makeCoordinationFormViewController(didCommit: { [unowned self] in
+            store.dispatch(action: .openWikipedia($0))
+        })
+    }
+    
 }
 
 #if DEBUG
