@@ -22,7 +22,8 @@ class RouterTest: XCTestCase {
         factory = .init()
         navigationController = .init()
         store = .init(initialState: state)
-        sut = .init(store: store, factory: factory, navigationController: navigationController)
+        sut = .init(store: store, factory: factory)
+        sut.navigationController = navigationController
     }
     
     func test_start_navigatesToLocationsSelectionViewController() {

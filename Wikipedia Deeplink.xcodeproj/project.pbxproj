@@ -15,6 +15,8 @@
 		A681EAE42681E57400FD625D /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAE32681E57400FD625D /* ViewControllerFactory.swift */; };
 		A681EAE62681E57E00FD625D /* ViewControllerFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAE52681E57E00FD625D /* ViewControllerFactoryTest.swift */; };
 		A681EAE82681EACA00FD625D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAE72681EACA00FD625D /* Store.swift */; };
+		A681EAEA2681F10200FD625D /* RoutableNavigationControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAE92681F10200FD625D /* RoutableNavigationControllerTest.swift */; };
+		A681EAEC2681F16400FD625D /* RoutableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAEB2681F16400FD625D /* RoutableNavigationController.swift */; };
 		A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F0268090F2001BA455 /* AppDelegate.swift */; };
 		A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F2268090F2001BA455 /* SceneDelegate.swift */; };
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		A681EAE32681E57400FD625D /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		A681EAE52681E57E00FD625D /* ViewControllerFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryTest.swift; sourceTree = "<group>"; };
 		A681EAE72681EACA00FD625D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A681EAE92681F10200FD625D /* RoutableNavigationControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutableNavigationControllerTest.swift; sourceTree = "<group>"; };
+		A681EAEB2681F16400FD625D /* RoutableNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutableNavigationController.swift; sourceTree = "<group>"; };
 		A69DA0ED268090F2001BA455 /* Wikipedia Deeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Deeplink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA0F0268090F2001BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69DA0F2268090F2001BA455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				A69DA12726809846001BA455 /* Preview Helpers */,
 				A681EADB2681C9CB00FD625D /* Router.swift */,
 				A681EAE32681E57400FD625D /* ViewControllerFactory.swift */,
+				A681EAEB2681F16400FD625D /* RoutableNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				A6EE3DAB2680C7F00046E5FE /* Locations */,
 				A681EAD92681C9A100FD625D /* RouterTest.swift */,
 				A681EAE52681E57E00FD625D /* ViewControllerFactoryTest.swift */,
+				A681EAE92681F10200FD625D /* RoutableNavigationControllerTest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -395,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A681EAEC2681F16400FD625D /* RoutableNavigationController.swift in Sources */,
 				A681EADF2681E00400FD625D /* UINavigationController+NavigationController.swift in Sources */,
 				A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */,
 				A6EE3DB42680C8760046E5FE /* LocationsDataSource.swift in Sources */,
@@ -415,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6EE3DC02681098E0046E5FE /* CoordinatesFormViewControllerTest.swift in Sources */,
+				A681EAEA2681F10200FD625D /* RoutableNavigationControllerTest.swift in Sources */,
 				A681EAE62681E57E00FD625D /* ViewControllerFactoryTest.swift in Sources */,
 				A69DA108268090F4001BA455 /* Wikipedia_DeeplinkTests.swift in Sources */,
 				A681EADA2681C9A100FD625D /* RouterTest.swift in Sources */,
