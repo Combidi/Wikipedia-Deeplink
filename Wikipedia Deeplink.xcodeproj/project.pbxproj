@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A681EAD82681C94D00FD625D /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAD72681C94D00FD625D /* Coordinate.swift */; };
+		A681EADA2681C9A100FD625D /* NavigationControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EAD92681C9A100FD625D /* NavigationControllerTest.swift */; };
+		A681EADC2681C9CB00FD625D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681EADB2681C9CB00FD625D /* NavigationController.swift */; };
 		A69DA0F1268090F2001BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F0268090F2001BA455 /* AppDelegate.swift */; };
 		A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69DA0F2268090F2001BA455 /* SceneDelegate.swift */; };
 		A69DA0F7268090F3001BA455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69DA0F6268090F3001BA455 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		A681EAD72681C94D00FD625D /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		A681EAD92681C9A100FD625D /* NavigationControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTest.swift; sourceTree = "<group>"; };
+		A681EADB2681C9CB00FD625D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A69DA0ED268090F2001BA455 /* Wikipedia Deeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia Deeplink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69DA0F0268090F2001BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69DA0F2268090F2001BA455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				A6EE3DBD268109730046E5FE /* Coordinates Form */,
 				A6EE3DAA2680C7E30046E5FE /* Locations */,
 				A69DA12726809846001BA455 /* Preview Helpers */,
+				A681EADB2681C9CB00FD625D /* NavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			children = (
 				A6EE3DBE2681097C0046E5FE /* Coordinates Form */,
 				A6EE3DAB2680C7F00046E5FE /* Locations */,
+				A681EAD92681C9A100FD625D /* NavigationControllerTest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 				A6EE3DC2268109BB0046E5FE /* CoordinatesFormViewController.swift in Sources */,
 				A681EAD82681C94D00FD625D /* Coordinate.swift in Sources */,
 				A6EE3DB22680C84C0046E5FE /* Location.swift in Sources */,
+				A681EADC2681C9CB00FD625D /* NavigationController.swift in Sources */,
 				A69DA0F3268090F2001BA455 /* SceneDelegate.swift in Sources */,
 				A69DA1232680957E001BA455 /* LocationsViewController.swift in Sources */,
 			);
@@ -379,6 +386,7 @@
 			files = (
 				A6EE3DC02681098E0046E5FE /* CoordinatesFormViewControllerTest.swift in Sources */,
 				A69DA108268090F4001BA455 /* Wikipedia_DeeplinkTests.swift in Sources */,
+				A681EADA2681C9A100FD625D /* NavigationControllerTest.swift in Sources */,
 				A69DA13126809BA5001BA455 /* LocationsViewControllerTest.swift in Sources */,
 				A6EE3DAD2680C7FF0046E5FE /* LocationsDataSourceTest.swift in Sources */,
 			);
