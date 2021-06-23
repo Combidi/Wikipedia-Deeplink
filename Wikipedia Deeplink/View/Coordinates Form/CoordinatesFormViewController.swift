@@ -22,13 +22,6 @@ class CoordinatesFormViewController: UIViewController {
             let latitude = Double(latitudeField.text!),
             let longitude = Double(longitudeField.text!)
         else {
-            let alert = UIAlertController(
-                title: "Troep!",
-                message: "nog meer troep",
-                preferredStyle: .alert
-            )
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
-            present(alert, animated: true)
             return
         }
         commit(.init(lat: latitude, long: longitude))
