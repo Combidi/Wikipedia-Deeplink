@@ -15,6 +15,7 @@ class CoordinatesFormViewController: UIViewController {
 
     @IBOutlet private(set) var latitudeField: UITextField!
     @IBOutlet private(set) var longitudeField: UITextField!
+    @IBOutlet private(set) var titleLabel: UILabel!
     @IBOutlet private(set) var commitButton: UIButton!
 
     @IBAction func commitButtonAction() -> Void {
@@ -30,11 +31,21 @@ class CoordinatesFormViewController: UIViewController {
     override func viewDidLoad() {
         configureSubviews()
     }
-    
+        
     private func configureSubviews() {
+        
         latitudeField.placeholder = "Latitude"
+        latitudeField.keyboardType = .decimalPad
+        latitudeField.autocorrectionType = .no
+        latitudeField.becomeFirstResponder()
+        
         longitudeField.placeholder = "Longitude"
-        commitButton.setTitle("Commit", for: .normal)
+        longitudeField.keyboardType = .decimalPad
+        longitudeField.autocorrectionType = .no
+        
+        titleLabel.text = "This button will only work if both fields values can be converted to Double 🙄"
+        
+        commitButton.setTitle("Lets go! ", for: .normal)
     }
         
 }

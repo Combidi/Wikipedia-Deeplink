@@ -6,7 +6,7 @@ import XCTest
 @testable import Wikipedia_Deeplink
 
 class CoordinatesFormViewControllerTest: XCTestCase {
-        
+            
     func test_latitudeFieldIsConnected() {
         let sut = CoordinatesFormViewController()
         sut.loadViewIfNeeded()
@@ -17,6 +17,12 @@ class CoordinatesFormViewControllerTest: XCTestCase {
         let sut = CoordinatesFormViewController()
         sut.loadViewIfNeeded()
         XCTAssertNotNil(sut.longitudeField)
+    }
+    
+    func test_labelIsConnected() {
+        let sut = CoordinatesFormViewController()
+        sut.loadViewIfNeeded()
+        XCTAssertNotNil(sut.titleLabel)
     }
     
     func test_commitButtonIsConnected() {

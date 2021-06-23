@@ -13,6 +13,7 @@
                 <outlet property="commitButton" destination="TPf-nn-1cw" id="8AG-mh-ywr"/>
                 <outlet property="latitudeField" destination="b1L-kz-1dU" id="BDe-lg-XPC"/>
                 <outlet property="longitudeField" destination="vlO-4A-fnw" id="6CP-HY-SZe"/>
+                <outlet property="titleLabel" destination="ant-yM-M2g" id="13m-IB-nwQ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="PvF-PY-iXS"/>
             </connections>
         </placeholder>
@@ -22,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-IK-XIh">
-                    <rect key="frame" x="20" y="385" width="374" height="126"/>
+                    <rect key="frame" x="20" y="371" width="374" height="154.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b1L-kz-1dU">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -34,8 +35,14 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPf-nn-1cw">
-                            <rect key="frame" x="0.0" y="92" width="374" height="34"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ant-yM-M2g">
+                            <rect key="frame" x="0.0" y="92" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPf-nn-1cw">
+                            <rect key="frame" x="0.0" y="124.5" width="374" height="30"/>
                             <color key="backgroundColor" systemColor="systemGray3Color"/>
                             <connections>
                                 <action selector="commitButtonAction" destination="-1" eventType="touchUpInside" id="9UN-p6-Ey4"/>
