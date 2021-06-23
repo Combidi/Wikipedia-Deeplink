@@ -6,7 +6,7 @@ import UIKit
 
 class BarButtonItem: UIBarButtonItem {
     
-    private var tapAction: (() -> Void)?
+    private(set) var tapAction: (() -> Void)?
 
     init(title: String, action: @escaping () -> Void) {
         self.init(title: title, style: .done, target: nil, action: nil)

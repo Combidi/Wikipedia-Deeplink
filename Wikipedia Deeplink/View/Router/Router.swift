@@ -36,18 +36,26 @@ class Router {
         navigationController?.set(initialViewController: locationSelectionViewController)
     }
     
+    private var coordinationFormViewController: UIViewController {
+        factory.makeCoordinationFormViewController(didCommit: { [unowned self] in
+            store.dispatch(action: .openWikipedia($0))
+        })
+    }
+    
     private var locationSelectionViewController: UIViewController {
-        factory.makeLocationSelectionViewController(
+        let viewController = factory.makeLocationSelectionViewController(
             locations: store.state.locations,
             didSelect: { [unowned self] in
                 store.dispatch(action: .openWikipedia($0.coordinate))
             }
         )
+        viewController.navigationItem.rightBarButtonItem = customCoordinateButton
+        return viewController
     }
-    
-    private var coordinationFormViewController: UIViewController {
-        factory.makeCoordinationFormViewController(didCommit: { [unowned self] in
-            store.dispatch(action: .openWikipedia($0))
+        
+    private var customCoordinateButton: BarButtonItem {
+        BarButtonItem(title: "Custom", action: { [unowned self] in
+            self.currentDestination = .coordinateForm
         })
     }
     

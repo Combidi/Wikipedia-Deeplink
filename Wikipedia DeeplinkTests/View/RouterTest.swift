@@ -59,6 +59,17 @@ class RouterTest: XCTestCase {
         XCTAssertEqual(store.capturedActions[0], .openWikipedia(expectedLocation.coordinate))
     }
     
+    func test_locationSelectionViewControllerContainsWorkingBarButtonItem() {
+        sut.start()
+        guard let button = factory.locationSelectionViewControllerStub.navigationItem.rightBarButtonItem as? BarButtonItem else {
+            XCTFail("locationSelectionViewController does not have a right bar button item")
+            return
+        }
+        XCTAssertFalse(sut.currentDestination == .coordinateForm)
+        button.tapAction?()
+        XCTAssertTrue(sut.currentDestination == .coordinateForm)
+    }
+    
 }
 
 fileprivate class FactorySpy: Factory {
