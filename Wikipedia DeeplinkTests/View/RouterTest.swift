@@ -14,8 +14,8 @@ class RouterTest: XCTestCase {
     private var sut: Router!
     
     private let state = State(locations: [
-        .init(name: "Arnhem", coordinate: .init(lat: 51.979605, long: 5.911081)),
-        .init(name: "Velp", coordinate: .init(lat: 51.9939061, long: 5.9735643))
+        .init(name: "Arnhem", coordinate: .init(latitude: 51.979605, longitude: 5.911081)),
+        .init(name: "Velp", coordinate: .init(latitude: 51.9939061, longitude: 5.9735643))
     ])
     
     override func setUp() {
@@ -44,7 +44,7 @@ class RouterTest: XCTestCase {
     func test_presentsCorrectlyConfiguresCoordinationFormViewController() {
         sut.start()
         sut.currentDestination = .coordinateForm
-        let expectedCoordinate = Coordinate(lat: 1.0, long: 2.0)
+        let expectedCoordinate = Coordinate(latitude: 1.0, longitude: 2.0)
         factory.capturedCommitClosure(expectedCoordinate)
         XCTAssertEqual(store.capturedActions.count, 1)
         XCTAssertEqual(store.capturedActions[0], .openWikipedia(expectedCoordinate))
@@ -53,7 +53,7 @@ class RouterTest: XCTestCase {
     func test_setsCorrectlyConfiguredLocationSelectionViewController() {
         sut.start()
         XCTAssertEqual(factory.capturedLocations, store.state.locations)
-        let expectedLocation = Location(name: "Amersfoort", coordinate: .init(lat: 51.9939061, long: 5.9735643))
+        let expectedLocation = Location(name: "Amersfoort", coordinate: .init(latitude: 51.9939061, longitude: 5.9735643))
         factory.capturedSelectionClosure(expectedLocation)
         XCTAssertEqual(store.capturedActions.count, 1)
         XCTAssertEqual(store.capturedActions[0], .openWikipedia(expectedLocation.coordinate))

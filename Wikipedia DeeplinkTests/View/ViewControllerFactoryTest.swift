@@ -10,8 +10,8 @@ class ViewControllerFactoryTest: XCTestCase {
     func test_makeLocationSelectionViewController() {
         let sut = ViewControllerFactory()
         let expectedLocations: [Location] = [
-            .init(name: "Arnhem", coordinate: .init(lat: 51.979605, long: 5.911081)),
-            .init(name: "Velp", coordinate: .init(lat: 51.9939061, long: 5.9735643))
+            .init(name: "Arnhem", coordinate: .init(latitude: 51.979605, longitude: 5.911081)),
+            .init(name: "Velp", coordinate: .init(latitude: 51.9939061, longitude: 5.9735643))
         ]
         var capturedLocation: Location?
         guard let result = sut.makeLocationSelectionViewController(
@@ -35,7 +35,7 @@ class ViewControllerFactoryTest: XCTestCase {
             XCTFail("Should return a view controller of type CoordinatesFormViewController")
             return
         }
-        let expectedCoordinate = Coordinate(lat: 51.9939061, long: 5.9735643)
+        let expectedCoordinate = Coordinate(latitude: 51.9939061, longitude: 5.9735643)
         result.commit(expectedCoordinate)
         XCTAssertEqual(capturedCoordinate, expectedCoordinate)
     }

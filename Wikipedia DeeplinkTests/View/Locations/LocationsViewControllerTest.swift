@@ -24,7 +24,7 @@ class LocationsViewControllerTest: XCTestCase {
     }
 
     func test_dataSourceIsConfiguredCorrectly() {
-        let locations = [Location(name: "Nijmegen", coordinate: .init(lat: 51.9939061, long: 5.9735643))]
+        let locations = [Location(name: "Nijmegen", coordinate: .init(latitude: 51.9939061, longitude: 5.9735643))]
         let sut = configuredSUT(locations: locations)
         XCTAssertEqual(sut.dataSource.locations, locations)
     }
@@ -36,8 +36,8 @@ class LocationsViewControllerTest: XCTestCase {
     
     func test_selectingLocation() {
         let locations: [Location] = [
-            .init(name: "Arnhem", coordinate: .init(lat: 51.979605, long: 5.911081)),
-            .init(name: "Velp", coordinate: .init(lat: 51.9939061, long: 5.9735643))
+            .init(name: "Arnhem", coordinate: .init(latitude: 51.979605, longitude: 5.911081)),
+            .init(name: "Velp", coordinate: .init(latitude: 51.9939061, longitude: 5.9735643))
         ]
         var capturedLocation: Location?
         let sut = configuredSUT(locations: locations) {

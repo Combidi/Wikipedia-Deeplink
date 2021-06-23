@@ -43,8 +43,8 @@ class CoordinatesFormViewControllerTest: XCTestCase {
         sut.longitudeField.text = String(longitude)
         sut.commitButtonAction()
         let expected = Coordinate(
-            lat: latitude,
-            long: longitude
+            latitude: latitude,
+            longitude: longitude
         )
         XCTAssertEqual(capturedCoordinate, expected)
     }
