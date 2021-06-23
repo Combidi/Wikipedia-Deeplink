@@ -25,7 +25,7 @@ class CoordinatesFormViewController: UIViewController {
         else {
             return
         }
-        commit(.init(lat: latitude, long: longitude))
+        commit(.init(latitude: latitude, longitude: longitude))
     }
     
     override func viewDidLoad() {

@@ -3,6 +3,6 @@
 //
 
 struct Coordinate: Equatable {
-    let lat: Double
-    let long: Double
+    let latitude: Double
+    let longitude: Double
 }
